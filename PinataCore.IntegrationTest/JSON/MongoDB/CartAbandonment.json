@@ -1,0 +1,45 @@
+﻿[
+  {
+    "Collection": "EventConfiguration",
+    "Keys": [ "_id" ],
+    "Schema": [
+      {
+        "Column": "_id",
+        "Type": "guid"
+      },
+      {
+        "Column": "_t",
+        "Type": "string"
+      },
+      {
+        "Column": "CreateDate",
+        "Type": "datetime"
+      },
+      {
+        "Column": "AbandonMinutes",
+        "Type": "int"
+      }
+    ],
+    "Rows": [
+      {
+        "_id": "481AB6C2-A7D6-4763-B02A-BEA3587B5B29",
+        "_t": "CartAbandonment",
+        "CreateDate": "2016-03-03 00:00:00",
+        "AbandonMinutes": 1440
+      },
+      {
+        "_id": "272FADE3-7EA9-4F2B-B145-DCE4D17A6B65",
+        "_t": "CartAbandonment",
+        "CreateDate": "1994-03-03 00:00:00",
+        "AbandonMinutes": 30
+      },
+      {
+        "_id": "11EA7E94-0D03-40CC-A6AB-8D258F380C18",
+        "_t": "CartAbandonment",
+        "CreateDate": "2017-03-03 00:00:00",
+        "AbandonMinutes": 5
+      }
+    ],
+    "FK_References": []
+  }
+]

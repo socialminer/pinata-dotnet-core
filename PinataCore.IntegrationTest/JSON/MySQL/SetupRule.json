@@ -1,0 +1,43 @@
+﻿[
+  {
+    "Table": "SetupRule",
+    "Keys": [ "Id" ],
+    "Schema": [
+      {
+        "Column": "Id",
+        "Type": "int"
+      },
+      {
+        "Column": "Name",
+        "Type": "string"
+      },
+      {
+        "Column": "Description",
+        "Type": "string"
+      }
+    ],
+    "Rows": [
+      {
+        "Id" : 1,
+        "Name" : "StartWith",
+        "Description" : null
+      },
+      {
+        "Id": 2,
+        "Name": "EndsWith",
+        "Description": null
+      },
+      {
+        "Id": 3,
+        "Name": "Contains",
+        "Description": null
+      },
+      {
+        "Id": 4,
+        "Name": "Regex",
+        "Description": null
+      }
+    ],
+    "FK_References": []
+  }
+]

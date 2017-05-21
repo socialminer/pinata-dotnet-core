@@ -1,0 +1,38 @@
+﻿[
+  {
+    "Table": "Setup",
+    "Keys": [ "Id" ],
+    "Schema": [
+      {
+        "Column": "Id",
+        "Type": "guid"
+      },
+      {
+        "Column": "CustomerId",
+        "Type": "guid"
+      },
+      {
+        "Column": "CreateDate",
+        "Type": "datetime"
+      },
+      {
+        "Column": "UpdateDate",
+        "Type": "datetime"
+      },
+      {
+        "Column": "Active",
+        "Type": "bool"
+      }
+    ],
+    "Rows": [
+      {
+        "Id": "EEA4263E-CC85-4749-A05C-975E74757F49",
+        "CustomerId": "9056a8ff-fee3-4b97-b0c7-45830e68b0e8",
+        "CreateDate": "2017-05-08 18:32:56",
+        "UpdateDate": "2017-05-08 18:32:56",
+        "Active": true
+      }
+    ],
+    "FK_References": []
+  }
+]

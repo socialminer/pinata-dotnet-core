@@ -1,0 +1,27 @@
+﻿[
+  {
+    "Table": "SetupSource",
+    "Keys": [ "Id" ],
+    "Schema": [
+      {
+        "Column": "Id",
+        "Type": "int"
+      },
+      {
+        "Column": "Name",
+        "Type": "string"
+      }
+    ],
+    "Rows": [
+      {
+        "Id": 1,
+        "Name": "Desktop"
+      },
+      {
+        "Id": 2,
+        "Name": "Mobile"
+      }
+    ],
+    "FK_References": []
+  }
+]

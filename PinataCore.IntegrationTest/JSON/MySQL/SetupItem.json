@@ -1,0 +1,57 @@
+﻿[
+  {
+    "Table": "SetupItem",
+    "Keys": [ "Id" ],
+    "Schema": [
+      {
+        "Column": "Id",
+        "Type": "guid"
+      },
+      {
+        "Column": "DomainId",
+        "Type": "guid"
+      },
+      {
+        "Column": "Type",
+        "Type": "int"
+      },
+      {
+        "Column": "Rule",
+        "Type": "int"
+      },
+      {
+        "Column": "Value",
+        "Type": "string"
+      },
+      {
+        "Column": "CreateDate",
+        "Type": "datetime"
+      },
+      {
+        "Column": "UpdateDate",
+        "Type": "datetime"
+      },
+      {
+        "Column": "Active",
+        "Type": "bool"
+      }
+    ],
+    "Rows": [
+      {
+        "Id": "d9fc2a87-8968-407c-9143-b44e4eb6158e",
+        "DomainId": "EF819179-CEC7-49A9-89A5-92D1D90F6E30",
+        "Type": 1,
+        "Rule": 1,
+        "Value": "/product/",
+        "CreateDate": "2016-11-24 00:49:03",
+        "UpdateDate": "2016-11-24 00:49:03",
+        "Active": true
+      }
+    ],
+    "FK_References": [
+      { "Table": "SetupDomain" },
+      { "Table": "SetupRule" },
+      { "Table": "SetupType" }
+    ]
+  }
+]

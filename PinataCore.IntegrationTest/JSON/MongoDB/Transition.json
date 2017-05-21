@@ -1,0 +1,59 @@
+﻿[
+  {
+    "Collection": "Transition",
+    "Keys": [ "_id" ],
+    "Schema": [
+      {
+        "Column": "_id",
+        "Type": "guid"
+      },
+      {
+        "Column": "CustomerId",
+        "Type": "guid"
+      },
+      {
+        "Column": "Name",
+        "Type": "string"
+      },
+      {
+        "Column": "Html",
+        "Type": "string"
+      },
+      {
+        "Column": "Fields",
+        "Type": "document"
+      },
+      {
+        "Column": "CreateDate",
+        "Type": "datetime"
+      },
+      {
+        "Column": "UpdateDate",
+        "Type": "datetime"
+      },
+      {
+        "Column": "Active",
+        "Type": "bool"
+      }
+    ],
+    "Rows": [
+      {
+        "_id": "bdc94b6e-311b-4536-a155-ec9e5638ea8d",
+        "CustomerId": "96e0155d-67ec-428e-85e6-0a9432816e8c",
+        "Name": "Name",
+        "Html": "<br /><div>Test</div>",
+        "Fields": {
+          "Prop1": "Value1",
+          "Prop2": "Value2",
+          "Prop3": "Value3",
+          "Prop4": {
+            "Prop41": "Value"
+          }
+        },
+        "CreateDate": "1994-03-03 00:00:00",
+        "UpdateDate": "2017-03-03 00:00:00",
+        "Active": true 
+      }
+    ]
+  }
+]

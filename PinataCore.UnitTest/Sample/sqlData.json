@@ -1,0 +1,144 @@
+﻿[
+    {
+        "Table": "TestPinata_Movie",
+        "Keys": [ "Id" ],
+        "Schema": [
+            {
+                "Column": "Id",
+                "Type": "guid"
+            },
+            {
+                "Column": "Name",
+                "Type": "string"
+            },
+            {
+                "Column": "CategoryId",
+                "Type": "int"
+            }
+        ],
+        "Rows": [
+            {
+                "Id": "adef64eb-38e4-11e6-8aa3-0003ff500b9d",
+                "Name": "Capitan America - Civil War",
+                "CategoryId": "1"
+            },
+            {
+                "Id": "b6210be7-38e4-11e6-8aa3-0003ff500b9d",
+                "Name": "Avangers",
+                "CategoryId": "4"
+            },
+            {
+                "Id": "ddbb311a-38e4-11e6-8aa3-0003ff500b9d",
+                "Name": "Deadpool",
+                "CategoryId": "1"
+            }
+        ],
+        "FK_References": [
+            { "Table": "TestPinata_Category" }
+        ]
+    },
+    {
+        "Table": "TestPinata_MovieActor",
+        "Keys": [ "MovieId", "ActorId" ],
+        "Schema": [
+            {
+                "Column": "MovieId",
+                "Type": "guid"
+            },
+            {
+                "Column": "ActorId",
+                "Type": "guid"
+            }
+        ],
+        "Rows": [
+            {
+                "MovieId": "adef64eb-38e4-11e6-8aa3-0003ff500b9d",
+                "ActorId": "b3e6447b-38e3-11e6-8aa3-0003ff500b9d"
+            },
+            {
+                "MovieId": "adef64eb-38e4-11e6-8aa3-0003ff500b9d",
+                "ActorId": "dee91372-38e3-11e6-8aa3-0003ff500b9d"
+            },
+            {
+                "MovieId": "adef64eb-38e4-11e6-8aa3-0003ff500b9d",
+                "ActorId": "e4b94626-38e3-11e6-8aa3-0003ff500b9d"
+            },
+            {
+                "MovieId": "ddbb311a-38e4-11e6-8aa3-0003ff500b9d",
+                "ActorId": "1cb9da05-38e5-11e6-8aa3-0003ff500b9d"
+            }
+        ],
+        "FK_References": [
+            { "Table": "TestPinata_Movie" },
+            { "Table": "TestPinata_Actor" }
+        ]
+    },
+    {
+        "Table": "TestPinata_Actor",
+        "Keys": [ "Id" ],
+        "Schema": [
+            {
+                "Column": "Id",
+                "Type": "guid"
+            },
+            {
+                "Column": "Name",
+                "Type": "string"
+            }
+        ],
+        "Rows": [
+            {
+                "Id": "b3e6447b-38e3-11e6-8aa3-0003ff500b9d",
+                "Name": "Chris Evans"
+            },
+            {
+                "Id": "dee91372-38e3-11e6-8aa3-0003ff500b9d",
+                "Name": "Robert Downey Jr."
+            },
+            {
+                "Id": "e4b94626-38e3-11e6-8aa3-0003ff500b9d",
+                "Name": "Scarlett Johansson"
+            },
+            {
+                "Id": "1cb9da05-38e5-11e6-8aa3-0003ff500b9d",
+                "Name": "Ryan Reynolds"
+            }
+        ],
+        "FK_References": [ ]
+    },
+    {
+        "Table": "TestPinata_Category",
+        "Keys": [ "Id" ],
+        "Schema": [
+            {
+                "Column": "Id",
+                "Type": "int"
+            },
+            {
+                "Column": "Name",
+                "Type": "string"
+            }
+        ],
+        "Rows": [
+            {
+                "Id": "1",
+                "Name": "Action"
+            },
+            {
+                "Id": "2",
+                "Name": "Sci-Fi"
+            },
+            {
+                "Id": "3",
+                "Name": "Thriller"
+            },
+            {
+                "Id": "4",
+                "Name": "Adventure"
+            }
+        ],
+        "FK_References": [ ]
+    }
+]
+    
+

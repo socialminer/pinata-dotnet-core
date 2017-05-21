@@ -1,0 +1,51 @@
+﻿[
+  {
+    "Table": "SetupDomain",
+    "Keys": [ "Id" ],
+    "Schema": [
+      {
+        "Column": "Id",
+        "Type": "guid"
+      },
+      {
+        "Column": "SetupId",
+        "Type": "guid"
+      },
+      {
+        "Column": "Source",
+        "Type": "int"
+      },
+      {
+        "Column": "Url",
+        "Type": "string"
+      },
+      {
+        "Column": "CreateDate",
+        "Type": "datetime"
+      },
+      {
+        "Column": "UpdateDate",
+        "Type": "datetime"
+      },
+      {
+        "Column": "Active",
+        "Type": "bool"
+      }
+    ],
+    "Rows": [
+      {
+        "Id": "EF819179-CEC7-49A9-89A5-92D1D90F6E30",
+        "SetupId": "EEA4263E-CC85-4749-A05C-975E74757F49",
+        "Source": "1",
+        "Url": "http://socialminer.com",
+        "CreateDate": "2017-05-08 18:34:39",
+        "UpdateDate": "2017-05-08 18:34:39",
+        "Active": true
+      }
+    ],
+    "FK_References": [
+      { "Table": "Setup" },
+      { "Table": "SetupSource" }
+    ]
+  }
+]

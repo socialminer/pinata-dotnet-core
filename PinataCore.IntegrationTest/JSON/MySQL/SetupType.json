@@ -1,0 +1,51 @@
+﻿[
+  {
+    "Table": "SetupType",
+    "Keys": [ "Id" ],
+    "Schema": [
+      {
+        "Column": "Id",
+        "Type": "int"
+      },
+      {
+        "Column": "Name",
+        "Type": "string"
+      },
+      {
+        "Column": "Description",
+        "Type": "string"
+      },
+      {
+        "Column": "Active",
+        "Type": "bool"
+      }
+    ],
+    "Rows": [
+      {
+        "Id": 1,
+        "Name": "PurchaseUrl",
+        "Description": "URL for the purchase page",
+        "Active": true
+      },
+      {
+        "Id": 2,
+        "Name": "CartUrl",
+        "Description": "URL for the cart page",
+        "Active": true
+      },
+      {
+        "Id": 3,
+        "Name": "PurchaseHtml",
+        "Description": "HTML tag for the purchase page",
+        "Active": true
+      },
+      {
+        "Id": 4,
+        "Name": "CartHtml",
+        "Description": "HTML tag for the cart page",
+        "Active": true
+      }
+    ],
+    "FK_References": []
+  }
+]

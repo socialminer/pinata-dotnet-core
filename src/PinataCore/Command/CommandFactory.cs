@@ -1,0 +1,56 @@
+﻿using MongoDB.Bson.Serialization;
+using MongoDB.Bson.Serialization.Serializers;
+using PinataCore.Data;
+using System;
+
+namespace PinataCore.Command
+{
+    public class CommandFactory
+    {
+        #region [ PRIVATE ]
+
+        private static object _locker = new object();
+
+        private static void MongoCustomSerializer()
+        {
+            lock (_locker)
+            {
+                try
+                {
+                    BsonSerializer.RegisterSerializer(typeof(DateTime), new DateTimeSerializer(DateTimeKind.Local));
+                }
+                catch (Exception ex)
+                {
+                    if (ex.HResult != -2146233088)
+                    {
+                        throw ex;
+                    }
+                }
+            }
+        }
+
+        #endregion
+
+        public static ICommand Create(Provider.Type provider)
+        {
+            ICommand command = null;
+
+            switch (provider)
+            {
+                case Provider.Type.MySQL:
+                    {
+                        command = new CommandSQL();
+                        break;
+                    }
+                case Provider.Type.MongoDB:
+                    {
+                        MongoCustomSerializer();
+                        command = new CommandMongo();
+                        break;
+                    }
+            }
+
+            return command;
+        }
+    }
+}

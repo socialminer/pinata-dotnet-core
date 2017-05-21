@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B1F7FD7A-3B3F-4DC9-8FDB-97FD341201CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{941DAE84-7433-4783-B718-96FABB091D9A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Package", "Package", "{B4F04D52-D5AB-4F42-93CD-BCB28EC99213}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PinataCore", "src\PinataCore\PinataCore.csproj", "{26A27AF6-3881-48E0-811F-2D090B304D33}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PinataCore.Common", "src\PinataCore.Common\PinataCore.Common.csproj", "{CE50D38B-E62C-483E-AE11-8B16DF5EEF7B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PinataCore.Data", "src\PinataCore.Data\PinataCore.Data.csproj", "{57531446-F550-4027-AD33-DBB9664E2A25}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PinataCore.UnitTest", "PinataCore.UnitTest\PinataCore.UnitTest.csproj", "{B566F08B-44E2-4390-8D0F-5BC975CDC1AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PinataCore.Package", "Package\PinataCore.Package\PinataCore.Package.csproj", "{0451BAEF-DF2E-4B98-8644-94EE9415E389}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PinataCore.IntegrationTest", "PinataCore.IntegrationTest\PinataCore.IntegrationTest.csproj", "{1E551124-1D07-42EB-B864-9B36C095B1DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26A27AF6-3881-48E0-811F-2D090B304D33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26A27AF6-3881-48E0-811F-2D090B304D33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26A27AF6-3881-48E0-811F-2D090B304D33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26A27AF6-3881-48E0-811F-2D090B304D33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE50D38B-E62C-483E-AE11-8B16DF5EEF7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE50D38B-E62C-483E-AE11-8B16DF5EEF7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE50D38B-E62C-483E-AE11-8B16DF5EEF7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE50D38B-E62C-483E-AE11-8B16DF5EEF7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57531446-F550-4027-AD33-DBB9664E2A25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57531446-F550-4027-AD33-DBB9664E2A25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57531446-F550-4027-AD33-DBB9664E2A25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57531446-F550-4027-AD33-DBB9664E2A25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B566F08B-44E2-4390-8D0F-5BC975CDC1AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B566F08B-44E2-4390-8D0F-5BC975CDC1AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B566F08B-44E2-4390-8D0F-5BC975CDC1AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B566F08B-44E2-4390-8D0F-5BC975CDC1AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E551124-1D07-42EB-B864-9B36C095B1DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E551124-1D07-42EB-B864-9B36C095B1DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E551124-1D07-42EB-B864-9B36C095B1DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E551124-1D07-42EB-B864-9B36C095B1DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{26A27AF6-3881-48E0-811F-2D090B304D33} = {B1F7FD7A-3B3F-4DC9-8FDB-97FD341201CB}
+		{CE50D38B-E62C-483E-AE11-8B16DF5EEF7B} = {B1F7FD7A-3B3F-4DC9-8FDB-97FD341201CB}
+		{57531446-F550-4027-AD33-DBB9664E2A25} = {B1F7FD7A-3B3F-4DC9-8FDB-97FD341201CB}
+		{B566F08B-44E2-4390-8D0F-5BC975CDC1AB} = {941DAE84-7433-4783-B718-96FABB091D9A}
+		{0451BAEF-DF2E-4B98-8644-94EE9415E389} = {B4F04D52-D5AB-4F42-93CD-BCB28EC99213}
+		{1E551124-1D07-42EB-B864-9B36C095B1DE} = {941DAE84-7433-4783-B718-96FABB091D9A}
+	EndGlobalSection
+EndGlobal
